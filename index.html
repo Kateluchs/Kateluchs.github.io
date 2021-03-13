@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cats</title>
+</head>
+<body>
+<div class="cont">
+<h1>Hello, CATS!!!</h1>
+</div>
+<div class="gallery">
+
+    <img src="https://i.ytimg.com/vi/317jz-PU7Mg/maxresdefault.jpg" alt="" tabindex="1">
+    <img src="https://i.pinimg.com/originals/ef/b6/b6/efb6b6ba5dfbe2c75c0b80e062287275.jpg" alt=""tabindex="1">
+    <img src="https://image.winudf.com/v2/image/Y29tLnNtYXJ0YXBzcy5jYXRzZnVubnlfc2NyZWVuc2hvdHNfMF82ZDIzMTBmMA/screen-0.jpg?fakeurl=1&type=.jpg" alt=""tabindex="1">
+    <img src="https://bgr.com/wp-content/uploads/2015/06/funny-cat.jpg?quality=70&strip=all&w=782" alt=""tabindex="1">
+    <img src="https://i.pinimg.com/originals/8c/ab/4e/8cab4e46f19b1c4ae0ed8ff6c5115e7d.jpg" alt=""tabindex="1">
+    <img src="https://i.ytimg.com/vi/eX2qFMC8cFo/maxresdefault.jpg" alt=""tabindex="1">
+    <img src="https://i1.wp.com/katzenworld.co.uk/wp-content/uploads/2019/06/funny-cat.jpeg?fit=1920%2C1920&ssl=1" alt=""tabindex="1">
+    <img src="https://i.pinimg.com/originals/3c/da/56/3cda56c31c5022398cd70380c30fa4ef.jpg" alt=""tabindex="1">
+    <img src="https://i.pinimg.com/originals/e6/0c/f1/e60cf1b4bbabcef8934efa03329d35de.jpg" alt="Упс! Картина куда-то пропала" tabindex="1">
+    <img src="https://www.zenrooms.com/blog/wp-content/uploads/2020/05/funny-cats-2-1280x720.jpg" alt="Упс! Картина куда-то пропала" tabindex="1">
+    <img src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_513189787_110007.jpg" alt="Упс! Картина куда-то пропала" tabindex="1">
+    <img src="https://filmdaily.co/wp-content/uploads/2020/05/cat-memes-lede-1300x890.jpg" alt="Упс! Картина куда-то пропала" tabindex="1">
+    <img src="https://ngolongtech.b-cdn.net/wp-content/uploads/2016/05/ngolongtech_Top-funny-cats-picture-4.jpg" alt="Упс! Картина куда-то пропала" tabindex="1">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHfQfXQD-FhEfRlBCrWZiLi5PMIYWLRr2d6A&usqp=CAU" alt="Упс! Картина куда-то пропала" tabindex="1">
+    <img src="https://filmdaily.co/wp-content/uploads/2020/06/cat-lede-1300x825.jpg" alt="Упс! Картина куда-то пропала" tabindex="1">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP7xKLxBBY4c6r8kxQzpp6OW39VFRLJ9Qd0w&usqp=CAU" alt="Упс! Картина куда-то пропала" tabindex="1">
+    <img src="https://www.womansworld.com/wp-content/uploads/2019/07/funny-cat-faces-pictures.jpg?w=750" alt="Упс! Картина куда-то пропала" tabindex="1">
+    <img src="https://img3.goodfon.com/wallpaper/nbig/e/53/funny-cat-kitten-kitty-cats.jpg" alt="Упс! Картина куда-то пропала" tabindex="1">
+
+</div>
+<div class="in-con"><label>Введите ссылку на изображение</label><br><input type="text">
+<button type="button" class="btn" onclick='AddImg(this)'>Добавить картинку</button>
+</div>
+</body>
+<style>
+    h1 {
+        font-family: sans-serif;
+        background: crimson;
+        box-shadow: 0 -150px 70px -120px teal inset,
+        0 -220px 70px -120px yellowgreen inset,
+        0 -280px 70px -120px gold inset;
+        border-radius: 30px;
+        border: 10px solid white;
+        animation: background 4s infinite alternate;
+        text-align: center;
+        color: white;
+        font-size: 50px;
+        padding: 30px 0;
+        width: 90%;
+    }
+
+    @keyframes background {
+        50% {
+            background: darkviolet;
+            box-shadow: 0 -140px 70px -120px mediumorchid inset,
+            0 -210px 70px -120px teal inset,
+            0 -280px 70px -120px plum inset;
+        }
+    }
+
+    /* Helpers */
+    .cont , .gallery{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    body{
+        background: #EEE;
+    }
+    .gallery{
+        width: 90%;
+        margin: auto;
+    }
+    img{
+        width: 20%;
+        margin: 2%;
+        border: 5px solid white;
+        border-radius: 5px;
+    }
+    img:focus{
+     width: 40%;
+        outline: none;
+    }
+    img:hover{
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    button {
+        margin: 5px;
+        background-color: #b1b1b1;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    button:hover{
+        background-color: #c5c5c5;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    button:focus {
+        outline: none;
+    }
+    button:active {
+        background-color: #b3b0b0;
+    }
+    input{
+        padding: 4px;
+        font-size: 18px;
+        width: 50%;
+        margin: auto;
+    }
+    .in-con{
+        width: 80%;
+        margin: 2% auto 10% auto;
+    }
+    </style>
+<script>
+    function AddImg (){
+    let link = document.querySelector('input').value;
+console.log(link);
+        let container = document.querySelector('.gallery');
+
+        let newImg = document.createElement("img");
+        newImg.setAttribute('src', link);
+        newImg.setAttribute('alt', 'Упс! Ссылка на фоточку некорректная или отсутствет');
+        newImg.setAttribute('tabindex', '1');
+        container.append(newImg);
+        document.querySelector('input').value = "";
+    }
+</script>
+</html>
